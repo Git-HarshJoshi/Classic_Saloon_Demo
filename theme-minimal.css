@@ -1,0 +1,127 @@
+/* ═══════════════════════════════════════════════════════════════
+   AURUM SALOON — Theme: Trendy Minimal
+   Deep navy + rose gold — bold, modern, youthful
+   Usage: link AFTER styles.css
+═══════════════════════════════════════════════════════════════ */
+
+/* ── COLOR TOKENS (override defaults) ───────────────────── */
+
+:root {
+  --obsidian:   #0D1520;                        /* page bg   → deep navy     */
+  --obsidian-2: #111D2C;                        /* section   → mid navy      */
+  --obsidian-3: #162336;                        /* card bg   → lighter navy  */
+  --gold:        #C4735A;                       /* accent    → rose gold     */
+  --gold-light:  #D9907A;                       /* hover     → blush rose    */
+  --gold-dim:    rgba(196, 115, 90, 0.18);
+  --cream:       #F0EAE5;
+  --cream-dim:   rgba(240, 234, 229, 0.07);
+  --text:        #B0BFCC;                       /* body text → cool slate    */
+  --text-dim:    #5E7080;                       /* muted     → dim slate     */
+  --white:       #EDE8E3;                       /* headings  → warm off-white*/
+}
+
+/* ── NAV: deep navy scrolled ────────────────────────────── */
+
+.nav.scrolled {
+  background: rgba(13, 21, 32, 0.95) !important;
+  border-bottom: 1px solid rgba(196, 115, 90, 0.15) !important;
+}
+
+/* ── HERO OVERLAY: navy tint instead of pure black ──────── */
+
+.hero-overlay {
+  background: linear-gradient(
+    110deg,
+    rgba(13, 21, 32, 0.92) 0%,
+    rgba(13, 21, 32, 0.58) 55%,
+    rgba(13, 21, 32, 0.28) 100%
+  ) !important;
+}
+
+/* ── HERO STROKE: rose gold gradient ────────────────────── */
+
+.hero-stroke {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--gold) 40%,
+    var(--gold-light) 60%,
+    transparent 100%
+  ) !important;
+}
+
+/* ── BEFORE/AFTER SECTION: dark navy ────────────────────── */
+
+.ba-before { background: #080F18 !important; }
+.ba-after  { background: #0A1220 !important; }
+
+/* ── TICKER: dark navy text on rose-gold bg ─────────────── */
+
+.ticker span { color: #0D1520 !important; }
+
+/* ── EXP STRIP: dark navy text on rose-gold bg ──────────── */
+
+.exp-strip h2 { color: #0D1520 !important; }
+
+.btn-dark {
+  background: #0D1520 !important;
+  color: #EDE8E3 !important;
+}
+.btn-dark:hover { background: #162336 !important; }
+
+.btn-call-dark {
+  color: #0D1520 !important;
+  border-color: rgba(13, 21, 32, 0.35) !important;
+}
+
+/* ── CURSOR RING: rose gold ─────────────────────────────── */
+
+.cursor-ring {
+  border-color: rgba(196, 115, 90, 0.5) !important;
+}
+
+/* ── FLATPICKR: navy bg ─────────────────────────────────── */
+
+.flatpickr-calendar {
+  background: #111D2C !important;
+}
+.flatpickr-calendar.arrowTop:before,
+.flatpickr-calendar.arrowTop:after {
+  border-bottom-color: #111D2C !important;
+}
+
+/* ── CONTACT SECTION border ─────────────────────────────── */
+
+.contact-section {
+  border-top-color: rgba(196, 115, 90, 0.12) !important;
+}
+
+/* ── VALUE PILLS border ─────────────────────────────────── */
+
+.value-pill {
+  border-color: rgba(196, 115, 90, 0.3) !important;
+}
+
+/* ── SERVICES GRID accent ───────────────────────────────── */
+
+.services-grid {
+  background: rgba(196, 115, 90, 0.08) !important;
+  border-color: rgba(196, 115, 90, 0.1) !important;
+}
+
+/* ── RATING CTA ─────────────────────────────────────────── */
+
+.rating-cta {
+  background: rgba(196, 115, 90, 0.1) !important;
+  border-color: rgba(196, 115, 90, 0.3) !important;
+}
+.rating-cta:hover {
+  background: rgba(196, 115, 90, 0.2) !important;
+}
+
+/* ── THEME DROPDOWN ─────────────────────────────────────── */
+
+.theme-options {
+  background: #111D2C !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+}

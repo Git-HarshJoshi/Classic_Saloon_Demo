@@ -1,0 +1,143 @@
+/* ═══════════════════════════════════════════════════════════════
+   AURUM SALOON — Theme: Modern White
+   Warm cream & champagne gold — clean, bright, premium
+   Usage: link AFTER styles.css
+═══════════════════════════════════════════════════════════════ */
+
+/* ── COLOR TOKENS (override defaults) ───────────────────── */
+
+:root {
+  --obsidian:   #FAF7F2;                        /* page bg   → warm white    */
+  --obsidian-2: #F0E9DC;                        /* section   → light cream   */
+  --obsidian-3: #E5D8C8;                        /* card bg   → deeper cream  */
+  --gold:        #B5832A;                       /* accent    → warm amber    */
+  --gold-light:  #CF9E3C;                       /* hover     → brighter amber*/
+  --gold-dim:    rgba(181, 131, 42, 0.12);
+  --cream:       #2A1E0E;
+  --cream-dim:   rgba(42, 30, 14, 0.07);
+  --text:        #4A3B28;                       /* body text → dark brown    */
+  --text-dim:    #8A7A65;                       /* muted     → medium brown  */
+  --white:       #1A1208;                       /* headings  → near-black    */
+}
+
+/* ── NAV: light scrolled state ──────────────────────────── */
+
+.nav.scrolled {
+  background: rgba(250, 247, 242, 0.96) !important;
+  border-bottom: 1px solid rgba(181, 131, 42, 0.18) !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* ── HERO: text stays light (sits over dark photo overlay) ─ */
+
+.hero-title           { color: #FAF7F2 !important; }
+.hero-title em        { color: var(--gold-light) !important; }
+.hero-lead            { color: rgba(250, 247, 242, 0.85) !important; }
+.hero-content .eyebrow { color: var(--gold) !important; }
+
+/* ── TICKER: dark text on amber bg ─────────────────────── */
+
+.ticker span { color: #1A1208 !important; }
+
+/* ── EXPERIENCE STRIP: dark text on amber bg ────────────── */
+
+.exp-strip h2 { color: #1A1208 !important; }
+
+.btn-call-dark {
+  color: #1A1208 !important;
+  border-color: rgba(26, 18, 8, 0.3) !important;
+}
+.btn-call-dark:hover { background: rgba(26, 18, 8, 0.07) !important; }
+
+/* ── SERVICE CARDS: subtle borders on light bg ──────────── */
+
+.service-card ul li {
+  border-bottom-color: rgba(0, 0, 0, 0.07) !important;
+}
+
+/* ── CONTACT ROWS: subtle borders ───────────────────────── */
+
+.contact-row {
+  border-bottom-color: rgba(0, 0, 0, 0.07) !important;
+}
+
+/* ── FOOTER bottom border ───────────────────────────────── */
+
+.footer-bottom {
+  border-top-color: rgba(0, 0, 0, 0.07) !important;
+}
+
+/* ── FORM INPUTS: light color scheme ───────────────────── */
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  color-scheme: light !important;
+  border-color: rgba(181, 131, 42, 0.2) !important;
+}
+
+.custom-select-trigger { color-scheme: light !important; }
+
+.custom-select-trigger::after {
+  color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.custom-option.disabled {
+  color: rgba(0, 0, 0, 0.25) !important;
+}
+
+/* ── BEFORE/AFTER SECTION: lighter backgrounds ─────────── */
+
+.ba-before { background: #C8C0B0 !important; }
+.ba-after  { background: #B8B0A0 !important; }
+
+/* ── GALLERY: slightly brighter images on light bg ──────── */
+
+.g-item img         { filter: brightness(0.84) saturate(0.92) !important; }
+.g-item:hover img   { filter: brightness(0.94) saturate(1.0) !important; }
+
+/* ── MAP: lighter filter for light page ─────────────────── */
+
+iframe { filter: grayscale(0.9) brightness(0.78) contrast(1.05) !important; }
+
+/* ── FAB BUTTONS: icon must be dark on amber bg ─────────── */
+
+.fab-whatsapp,
+.fab-call { color: #1A1208 !important; }
+
+/* ── NAV BOOK BUTTON ────────────────────────────────────── */
+
+.nav-book { color: #1A1208 !important; }
+
+/* ── NUMBERS SECTION ────────────────────────────────────── */
+
+.numbers {
+  background: rgba(181, 131, 42, 0.08) !important;
+  border-color: rgba(181, 131, 42, 0.15) !important;
+}
+
+/* ── TESTIMONIAL CARDS: white with soft shadow ──────────── */
+
+.test-card {
+  background: #FFFFFF !important;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06) !important;
+  border-color: rgba(181, 131, 42, 0.12) !important;
+}
+
+/* ── RATING CARD ────────────────────────────────────────── */
+
+.rating-card {
+  background: #FFFFFF !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* ── THEME DROPDOWN: light bg version ───────────────────── */
+
+.theme-options {
+  background: #FAF7F2 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.theme-options a {
+  border-bottom-color: rgba(0, 0, 0, 0.06) !important;
+}
